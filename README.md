@@ -8,9 +8,9 @@ Este projeto foi construído seguindo boas práticas de programação, focando e
 
 ## 🚀 Tecnologias Utilizadas
 
-- **Backend:** Node.js, Fastify (Framework HTTP super veloz) e TypeScript.
+- **Backend:** Node.js, Fastify e TypeScript.
 - **Banco de Dados & ORM:** SQLite e Prisma.
-- **Frontend:** HTML clássico com Tailwind CSS (via CDN) para uma UI moderna com visual "glassmorphic" dark mode.
+- **Frontend:** HTML, Tailwind CSS.
 
 ---
 

@@ -12,7 +12,7 @@ fastify.register(fastifyCors, { origin: '*' });
 // Register Static Files for Frontend
 fastify.register(fastifyStatic, {
   root: path.join(__dirname, '../../../../public'),
-  prefix: '/', 
+  prefix: '/',
 });
 
 // Register API Routes
@@ -29,8 +29,9 @@ fastify.setNotFoundHandler((req, reply) => {
 
 const start = async () => {
   try {
-    await fastify.listen({ port: 3000, host: '0.0.0.0' });
-    console.log(`Server listening on http://localhost:3000`);
+    const port = process.env.PORT ? Number(process.env.PORT) : 3000;
+
+    await fastify.listen({ port, host: '0.0.0.0' });
   } catch (err) {
     fastify.log.error(err);
     process.exit(1);
