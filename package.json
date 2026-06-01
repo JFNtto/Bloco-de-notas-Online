@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch src/infrastructure/http/fastify/server.ts",
-    "build": "prisma generate && tsc",
-    "start": "DATABASE_URL=${DATABASE_URL:-file:./prisma/dev.db} prisma db push && node dist/infrastructure/http/fastify/server.js"
+    "build": "npx prisma generate && npx tsc",
+    "start": "DATABASE_URL=${DATABASE_URL:-file:./prisma/dev.db} npx prisma db push && node dist/infrastructure/http/fastify/server.js"
   },
   "keywords": [],
   "author": "",
